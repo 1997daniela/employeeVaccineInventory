@@ -1,0 +1,27 @@
+{
+  "employeeVaccineInventoryApp": {
+    "vaccine": {
+      "home": {
+        "title": "Vaccines",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Vaccine",
+        "createOrEditLabel": "Crear o editar Vaccine",
+        "notFound": "Ningún Vaccines encontrado"
+      },
+      "created": "Un nuevo Vaccine ha sido creado con el identificador {{ param }}",
+      "updated": "Un Vaccine ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Vaccine ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Vaccine {{ id }}?"
+      },
+      "detail": {
+        "title": "Vaccine"
+      },
+      "id": "ID",
+      "vaccineType": "Vaccine Type",
+      "vaccinationDate": "Vaccination Date",
+      "doses": "Doses",
+      "applicationUser": "Application User"
+    }
+  }
+}

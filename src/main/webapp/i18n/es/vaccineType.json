@@ -1,0 +1,11 @@
+{
+  "employeeVaccineInventoryApp": {
+    "VaccineType": {
+      "null": "",
+      "SPUTNIK": "SPUTNIK",
+      "AZTRAZENECA": "AZTRAZENECA",
+      "PFIZER": "PFIZER",
+      "JHONSONJHONSON": "JHONSONJHONSON"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+export enum VaccineType {
+  SPUTNIK = 'SPUTNIK',
+
+  AZTRAZENECA = 'AZTRAZENECA',
+
+  PFIZER = 'PFIZER',
+
+  JHONSONJHONSON = 'JHONSONJHONSON',
+}

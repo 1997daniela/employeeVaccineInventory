@@ -1,0 +1,40 @@
+{
+  "applications": "*",
+  "changelogDate": "20220908194307",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "vaccine",
+  "fields": [
+    {
+      "fieldName": "vaccineType",
+      "fieldType": "VaccineType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "SPUTNIK,AZTRAZENECA,PFIZER,JHONSONJHONSON"
+    },
+    {
+      "fieldName": "vaccinationDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "doses",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Vaccine",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "applicationUser",
+      "otherEntityRelationshipName": "vaccine",
+      "relationshipName": "applicationUser",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "no"
+}

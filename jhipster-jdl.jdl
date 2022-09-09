@@ -1,0 +1,24 @@
+entity ApplicationUser {
+      identification String required unique minlength(10) maxlength(10),
+      birthday LocalDate,
+      address String,
+      cellphone String minlength(10) maxlength(10),
+}
+
+entity Vaccine {
+	vaccineType VaccineType required,
+    vaccinationDate LocalDate required,
+    doses Integer required,
+}
+
+enum VaccineType {
+    SPUTNIK,AZTRAZENECA,PFIZER,JHONSONJHONSON
+}
+
+relationship OneToOne {
+    ApplicationUser{internalUser required} to User
+}
+
+relationship OneToMany {
+	ApplicationUser{vaccine} to Vaccine{applicationUser required}
+}

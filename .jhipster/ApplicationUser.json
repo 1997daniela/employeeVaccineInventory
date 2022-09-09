@@ -1,0 +1,52 @@
+{
+  "applications": "*",
+  "changelogDate": "20220908005921",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "application_user",
+  "fields": [
+    {
+      "fieldName": "identification",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "10",
+      "fieldValidateRulesMinlength": "10"
+    },
+    {
+      "fieldName": "birthday",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cellphone",
+      "fieldType": "String",
+      "fieldValidateRules": ["minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "10",
+      "fieldValidateRulesMinlength": "10"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ApplicationUser",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "ownerSide": true,
+      "relationshipName": "internalUser",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "vaccine",
+      "otherEntityRelationshipName": "applicationUser",
+      "relationshipName": "vaccine",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
